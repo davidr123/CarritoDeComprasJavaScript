@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARRITOV2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    
+<h3 class="mt-3 text-center">AÑADIR AL CARRITO DE COMPRAS</h3>
+  
+<main class="container mt-5">
+
+    <div class="row text-center">
+        <article class="col-sm-4 mb-3">
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Frutillas 🍓 </h5>
+                    <p class="lead">$100</p>
+                   <button class="btn  btn-outline-primary"
+                   data-fruta="frutilla" data-precio="100"
+                   >Agregar</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="col-sm-4 mb-3">
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Bananas 🍌 </h5>
+                    <p class="lead">$150</p>
+                    <button class="btn  btn-outline-primary"
+                    data-fruta="banana" data-precio="150"
+                    >Agregar</button>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="col-sm-4 mb-3">
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Manzanas 🍎 </h5>
+                    <p class="lead">$300</p>
+
+                    <button class="btn  btn-outline-primary"
+                    data-fruta="manzana" data-precio="300"
+                    >Agregar</button>
+                </div>
+            </div>
+        </article>
+
+    </div>
+
+
+
+  </main>
+
+
+  <section class="container mt-3" >
+
+    <ul class="list-group" id="carrito">
+
+ 
+
+    </ul>
+  </section>
+
+  <footer id="footer" class="container mt-3">
+      <template id="templatefooter">
+      <div class="card">
+          <div class="card-body d-flex justify-content-between align-items-center">
+              <p class="lead mb-0">Total <span>$3.70</span></p>
+              <button class="btn btn-outline-info">Finalizar Compra</button>
+          </div>
+      </div>
+    </template>
+  </footer>
+
+  <template id="template">
+    <li class="list-group-item bg-secondary text-white">
+        <span class="badge bg-primary rounded-pill align-middle">12</span>
+        <span class="lead align-middle" >Frutilla</span>
+        
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        <div>
+               <p class="lead mb-0">Total:<span>0</span></p>
+        </div>
+
+        <div>
+          <button class="btn btn-sm btn-danger">Quitar</button>
+          <button class="btn btn-sm btn-success">Agregar</button>
+        </div>
+    </li>
+  </template>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
